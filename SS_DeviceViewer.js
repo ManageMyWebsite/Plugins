@@ -14,6 +14,8 @@ function domWatch(parent, child, options, callback){
       //$(targetNode)
       $(targetNode).find('.config-website-frame').addClass('web-frame')
 
+      console.log($(targetNode).find('.config-website-frame'))
+
       window.dispatchEvent(new Event('resize'));
       observer.disconnect()
       observer.observe(targetNode, config);
