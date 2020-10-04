@@ -7,10 +7,10 @@ function domWatch(parent, child, options, callback){
       //Load CSS
       var myCSS = window.parent.document.createElement( "link" );
       myCSS.rel = "stylesheet";
-      myCSS.href = "mystyles.css";
+      myCSS.href = "https://cdn.jsdelivr.net/gh/managemywebsite/Plugins/SS_DeviceViewer.css";
       // insert it at the end of the head in a legacy-friendly manner
       window.parent.document.head.insertBefore( myCSS, window.parent.document.head.childNodes[ window.parent.document.head.childNodes.length - 1 ].nextSibling );
-      
+
       //$(targetNode)
       $(targetNode).find('.config-website-frame').addClass('web-frame')
 
